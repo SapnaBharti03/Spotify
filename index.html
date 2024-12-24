@@ -1,0 +1,88 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify clone</title>
+        <link rel="stylesheet" href="/Spotify/CSS/style.css">
+        <link rel="stylesheet" href="/Spotify/CSS/common.css">
+        <link rel="stylesheet" href="/Spotify/CSS/media.css">
+    </head>
+
+    <body>
+        <nav>
+            <img class="spotify-img invert" src="/Spotify/Img/spotify.svg" alt="img1">
+            <span class="spotify font">Spotify</span>
+            <a href="/Spotify/index.html"><img class="home" src="/Spotify/Img/home.svg" alt=""></a>
+            <div class="search-container">
+                <form action="/search" method="GET">
+                    <input type="text" name="query" class="search-input" placeholder="Search...">
+                    <button type="submit" class="search-button"><img src="/Spotify/Img/search.svg" alt="img"></button>
+                </form>
+            </div>
+            <div class="buttons font invert">
+                <a href="/Spotify/SignUp.html"><button>Sign up</button></a>
+                <a href="/Spotify/Login.html"><button>Log In</button></a>
+            </div>
+        </nav>
+        <div class="container font">
+            <div class="left black-b">
+                <img class="close invert" src="/Spotify/Img/close.svg" alt="img">
+                <div class="library">
+                    <ul class="l-symbol">
+                        <li><img class="invert" src="/Spotify/Img/library.svg" alt="library">Your Library</li>
+                    </ul>
+                    <div class="create-playlist">
+                        <span>Create your first playlist</span>
+                        <span>It's easy, we'll help you</span>
+                        <button class="btn">Create Playlist</button>
+                    </div>
+                    <div class="your-playlist">
+                        <div class="playlist-heading">
+                        <img class="invert" src="/Spotify/Img/playlist.svg" alt="">
+                        <span>Your PlayList</span>
+                    </div>
+                        <!-- <div class="songs"> -->
+                        <ul>
+
+                        </ul>
+                        <!-- </div> -->
+                    </div>
+                    <footer>
+                        <ul>
+                            <li>Legal</li>
+                            <li>PrivacyPolicy</li>
+                            <li>cookies</li>
+                            <li>AboutAds</li>
+                            <li>Accessibility</li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <div class="right black-b">
+                <div class="playlist">
+                    <img class="hamburger invert" src="/Spotify/Img/hamburger.svg" alt="img">
+                    <span>Popular Album and Singers</span>
+                    <div class="cardcontainer">
+                    </div>
+                </div>
+                <div class="playbar">
+                    <!-- <div class="seekbar">
+                    <img class="circle" src="circle.svg" alt="">
+                </div> -->
+                    <input type="range" name="range" class="seekbar" value="0" min="0" max="100">
+                    <div class="p-symbol">
+                        <div class="songinfo">
+                            <img src="/Spotify/Img/music.svg" alt="">
+                        </div>
+                        <img id="previous" src="/Spotify/Img/previous.svg" alt="img1">
+                        <img id="play" src="/Spotify/Img/paused.svg" alt="img2">
+                        <img id="next" src="/Spotify/Img/next.svg" alt="img3">
+                        <div class="songtime"></div>
+                    </div>
+                </div>
+                <script src="/Spotify/Js/spotifyscript.js"></script>
+    </body>
+
+    </html>

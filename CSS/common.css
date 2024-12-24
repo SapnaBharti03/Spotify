@@ -1,0 +1,9 @@
+.black-b{
+    background-color:#1a1a1a;
+}
+.invert{
+    filter: invert(1);
+}
+.font{
+    font-family: "Roboto", sans-serif;
+}

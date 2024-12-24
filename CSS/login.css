@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(to bottom, #1db954, #191414); */
+    background-image: url('/Spotify/Img/download.jpg');
+    background-size: contain;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  .spotify-logo{
+    filter: invert(1);
+  }
+  .login-card {
+    background: #282828;
+    padding: 30px 30px 0px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    margin-top: 1px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-size:1rem;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .input-group input {
+    width: 94%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .login-button {
+    width: 100%;
+    background: #1db954;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background: #14833b;
+  }
+  
+  .divider {
+    margin: 20px 0;
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  .social-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .social-button.facebook {
+    background: #3b5998;
+    color: #fff;
+  }
+  
+  .social-button.google {
+    background: #db4437;
+    color: #fff;
+  }
+  
+  .signup-text {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .signup-text a {
+    color: #1db954;
+    text-decoration: none;
+  }
+  
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+  

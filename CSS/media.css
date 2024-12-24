@@ -1,0 +1,94 @@
+@media (max-width:1200px){
+    nav{
+        height: 130px;
+    }
+    nav .spotify-img{
+        width: 80px;
+    }
+    .buttons button{
+        font-size:22px;
+        padding: 17px;
+        border-radius:30px;
+        width: 16vw;
+    }
+    .left{
+        position: absolute;
+        left:-110%;
+        z-index:1;
+        transition:ease-in 0.5s;
+        width:70vw;
+        height: 70vh;
+    }
+    .right{
+        width: 100%;
+    }
+    .cardcontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    /* .cardcontainer2{
+        display: none;
+    } */
+    .span{
+        display: none;
+    }
+    .cardcontainer .card h3{
+        font-size: 40px;
+    }        
+    .cardcontainer .card p{
+        font-size: 30px;
+    }        
+    .card{
+        /* display: flex; */
+        width:80vw;
+        /* align-items: center;
+        justify-content: center; */
+    }
+    .playlist{
+        max-height: 60vh;
+    }
+    .playlist span{
+        margin-left:75px;
+        font-size: 45px;
+        margin-bottom: 60px;
+    }
+    .hamburger{
+        display: block;
+        display: inline;
+        width: 55px;
+        position: fixed;
+        left: 15px;
+    }
+    .close{
+        display:block;
+        top:7px;
+        right:3%;
+    }
+    .playbar{
+        height: 150px;
+        justify-content: center;
+    }
+    .seekbar{
+        position: relative;
+        top: -40px;
+        height: 6px;
+    }
+    .p-symbol .songinfo{
+        top: -34px;
+        margin-left: 290px;
+        font-size: 1.8em;
+        word-break:break-all;
+    }
+    .p-symbol .songtime{
+        font-size: 1.5em;
+        word-break:break-all;
+        bottom: -30px;
+        left: 380px;
+    }
+    .p-symbol img{
+        height: 3.5em;
+    }
+
+}
