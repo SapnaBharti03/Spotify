@@ -63,11 +63,15 @@
     .playlist{
         max-height:75vh;
     }
-    .playlist span{
+    .playlist>span{
         margin-top:2px;
         margin-left:45px;
         font-size: 25px;
         /* position: fixed; */
+    }
+    .cardcontainer span{
+      margin-top:2px;
+      font-size: 25px;
     }
     .hamburger{
         display: block;
