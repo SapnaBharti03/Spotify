@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     max-width: 400px;
     height:100vh;
     
@@ -50,15 +50,16 @@ body {
     display: block;
   }
   
-  .input-group input,
-  .input-group select {
+  .input-group input,.input-group select{
     width: 100%;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ddd;
     border-radius: 4px;
   }
-  
+  .input-group select{
+    width: 104%;
+  }
   .checkbox-group {
     margin: 15px 0;
     text-align: left;

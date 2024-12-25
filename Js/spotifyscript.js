@@ -132,9 +132,9 @@ async function displayAlbum() {
     Array.from(document.getElementsByClassName("card")).forEach(e => {
         e.addEventListener("click", async item => {
             console.log(item.currentTarget, item.currentTarget.dataset)
-            console.log("hello...")
             song = await getSong(`songs/${item.currentTarget.dataset.folder}`)
             console.log(song)
+            document.querySelector(".left").style.left = "0"
             playMusic(song[0])
         })
     })
@@ -180,11 +180,13 @@ async function main() {
     //Add eventlistner for hamburger
     document.querySelector(".hamburger").addEventListener("click", () => {
         document.querySelector(".left").style.left = "0"
+        document.querySelector(".hamburger").style.display="none"
     })
 
     //close menu
     document.querySelector(".close").addEventListener("click", () => {
         document.querySelector(".left").style.left = "-110%"
+        document.querySelector(".hamburger").style.display="block"
     })
 
     //eventListener for pevious
