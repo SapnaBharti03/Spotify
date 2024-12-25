@@ -1,36 +1,53 @@
-@media (max-width:1200px){
+@media (max-width:740px){
     nav{
-        height: 130px;
+        height:60px;
     }
     nav .spotify-img{
-        width: 80px;
+        width: 33px;
+        margin: 0 0 0 10px;
+    }
+    .spotify{
+        left: 50px;
+    }
+    .home{
+        display: none;
+    }
+    .search-container{
+        display: none;
     }
     .buttons button{
-        font-size:22px;
-        padding: 17px;
+        font-size:16px;
+        padding: 6px;
         border-radius:30px;
         width: 16vw;
+    }
+    .sign-btn{
+        display: none;
     }
     .left{
         position: absolute;
         left:-110%;
         z-index:1;
-        transition:ease-in 0.5s;
+        transition:ease 0.2s;
         width:70vw;
         height: 70vh;
     }
-    .right{
+    .create-playlist .btn{
+        width:20vw;
+    }
+    .right {
         width: 100%;
+        padding: 10px;
+        /* height: auto; */
+        overflow-y: auto;
+        height:82vh;
     }
-    .cardcontainer{
-        display: flex;
+    .cardcontainer {
+        flex-wrap: wrap;
+        gap: 13px;
         justify-content: center;
-        align-items: center;
-        gap: 0;
+        margin-top: 12px;
     }
-    /* .cardcontainer2{
-        display: none;
-    } */
     .span{
         display: none;
     }
@@ -41,25 +58,24 @@
         font-size: 30px;
     }        
     .card{
-        /* display: flex; */
-        width:80vw;
-        /* align-items: center;
-        justify-content: center; */
+        width:39vw;
     }
     .playlist{
-        max-height: 60vh;
+        max-height:75vh;
     }
     .playlist span{
-        margin-left:75px;
-        font-size: 45px;
-        margin-bottom: 60px;
+        margin-top:2px;
+        margin-left:45px;
+        font-size: 25px;
+        /* position: fixed; */
     }
     .hamburger{
         display: block;
-        display: inline;
-        width: 55px;
+        /* display: inline; */
+        width: 30px;
         position: fixed;
         left: 15px;
+        z-index: index -2;;
     }
     .close{
         display:block;
@@ -67,15 +83,16 @@
         right:3%;
     }
     .playbar{
-        height: 150px;
+        height:50px;
         justify-content: center;
     }
     .seekbar{
         position: relative;
-        top: -40px;
+        top:-1px;
         height: 6px;
     }
     .p-symbol .songinfo{
+        display: none;
         top: -34px;
         margin-left: 290px;
         font-size: 1.8em;
@@ -86,9 +103,82 @@
         word-break:break-all;
         bottom: -30px;
         left: 380px;
+        display: none;
     }
     .p-symbol img{
-        height: 3.5em;
+        height: 2em;
     }
 
+    /* for login */
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width:350px;
+      }
+      .login-card {
+        width: 100%;
+        height: 72vh;
+        padding: 15px 30px 0px 30px;
+      }
+      .login-card h1 {
+        font-size: 1.3rem;
+        margin-bottom:7px;
+      }
+      .input-group label {
+        font-size:0.9rem;
+        margin-bottom:3px;
+      }
+      .input-group input {
+        padding:7px;
+        font-size: 0.9rem;
+      }
+      .input-group {
+        margin-bottom: 12px;
+      }
+      .login-button {
+        padding:7px;
+        font-size: 0.9rem;
+      }
+      .divider {
+        margin: 10px 0;
+        font-size: 0.8rem;
+      }
+      .social-button {
+        padding:7px;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+      .signup-text {
+        margin-top:0px;
+        font-size: 0.9rem;
+        margin-bottom:0;
+      }
+      .back-to-home{
+        font-size:13px;
+        margin: 5px;
+      }
+
+      /* for signup */
+      .signup-container {
+        max-width: 350px;
+        width:60%;
+      }
+      .signup-card h1 {
+        font-size: 1.3rem;
+        margin-bottom:7px;
+      }
+      .checkbox-group label {
+        font-size: 0.9rem;
+      }
+      .signup-button {
+        padding:7px;
+        font-size: 0.9rem;
+      }
+      .login-text{
+        margin-top:5px;
+        font-size: 0.9rem;
+        margin-bottom:0;
+      }
 }
